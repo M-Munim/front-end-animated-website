@@ -169,3 +169,32 @@ nav {
     }
 }
 
+/* PAGE 2 */
+#page2 {
+    padding: 8vw 0vw;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(117, 47, 183);
+}
+
+#moving-text{
+    white-space: nowrap;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#moving-text h1 {
+    font-size: 7vw;
+    display: inline-block;
+}
+
+#gola {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #FE320A;
+    display: inline-block;
+}
