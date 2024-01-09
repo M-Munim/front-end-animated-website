@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 html,
@@ -15,14 +18,15 @@ a {
 }
 
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0px 2vw;
 }
 
 nav {
-    padding: 2vw 2vw;
+    padding: 2vw 0vw;
     width: 100%;
     /* background-color: green; */
     display: flex;
@@ -62,7 +66,6 @@ nav {
 
 #nav-part2 h4:hover::after {
     bottom: 0;
-    /* border-radius: 0; */
 }
 
 #nav-part2 h4 a {
@@ -75,3 +78,94 @@ nav {
 #nav-part2 h4:hover a {
     color: #fff;
 }
+
+#center {
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#center h1 {
+    font-size: 9vw;
+    line-height: 7.2vw;
+    text-align: right;
+}
+
+#page1 video {
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 4vw;
+    position: relative;
+}
+
+#hero-shape {
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    right: 0;
+    top: 75vh;
+}
+
+#hero-1 {
+    background-color: #FE320A;
+    filter: blur(20px);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+}
+
+#hero-2 {
+    background-color: #FE320A;
+    /* background-color: green; */
+    filter: blur(20px);
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation: animationTwo 4s linear infinite alternate;
+}
+
+#hero-3 {
+    filter: blur(20px);
+    background-color: #FE320A;
+    /* background-color: yellow; */
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation: animationOne 3s linear infinite alternate;
+}
+
+@keyframes animationOne {
+    from {
+        transform: translate(-10%, 10%);
+    }
+
+    to {
+        transform: translate(10%, -10%);
+    }
+}
+
+@keyframes animationTwo {
+    from {
+        transform: translate(-1%, 30%);
+    }
+
+    to {
+        transform: translate(10%, -20%);
+    }
+}
+
