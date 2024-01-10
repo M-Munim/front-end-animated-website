@@ -259,7 +259,7 @@ nav {
     top: 62%;
     left: 25%;
     filter: blur(20px);
-    animation: gooey 6s ease-in-out infinite alternate ;
+    animation: gooey 6s ease-in-out infinite alternate;
 }
 
 @keyframes gooey {
@@ -272,4 +272,73 @@ nav {
         filter: blur(30px);
         transform: translate(-10%, 10%) skew(-12deg);
     }
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+
+#page3 .fea {
+    padding: 3vw 2vw;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+#page3 .gola2 {
+    width: 10px;
+    height: 10px;
+    background-color: #FE320A;
+    border-radius: 50%;
+}
+
+.elem {
+    height: 120px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #38383864;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    
+    cursor: pointer;
+}
+
+.elem .sub {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+.elem .sub-end{
+    text-align: end;
+    font-size: 12px;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.28s;
+}
+
+.elem:hover .overlay {
+    top: 0;
 }
